@@ -1,0 +1,24 @@
+@model MiniScheduler.Models.Appointment
+
+<a href="https://www.flaticon.com/free-icons/calendar" title="calendar icon">Calender</a>
+
+
+<h1>Cancel Appointment</h1>
+
+<div class="alert alert-warning">
+	<p>Are you sure you want to cancel this appointment?</p>
+	<ul>
+		<li><strong>Name:</strong> @Model.Name</li>
+		<li><strong>Email:</strong> @Model.Email</li>
+		<li><strong>Date/Time:</strong> @Model.DateTime.ToLocalTime().ToString("f")</li>
+	</ul>
+</div>
+
+<form asp-action="Delete" method="post">
+	<input type="hidden" asp-for="Id" />
+	<button type="submit" class="btn btn-danger">Yes, Cancel</button>
+	<a asp-action="Index" class="btn btn-secondary">No, Go Back</a>
+</form>
+
+
+
