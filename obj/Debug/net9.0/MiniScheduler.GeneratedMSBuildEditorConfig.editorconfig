@@ -17,53 +17,61 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MiniScheduler
 build_property.RootNamespace = MiniScheduler
-build_property.ProjectDir = C:\Users\Ibi\Documents\TU\minischeduler\
+build_property.ProjectDir = C:\Users\Ibi\Documents\TU\MiniScheduler\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Ibi\Documents\TU\minischeduler
+build_property.MSBuildProjectDirectory = C:\Users\Ibi\Documents\TU\MiniScheduler
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Ibi/Documents/TU/minischeduler/Views/Appointment/Create.cshtml]
+[C:/Users/Ibi/Documents/TU/MiniScheduler/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ibi/Documents/TU/MiniScheduler/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ibi/Documents/TU/MiniScheduler/Views/Appointment/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ibi/Documents/TU/minischeduler/Views/Appointment/Delete.cshtml]
+[C:/Users/Ibi/Documents/TU/MiniScheduler/Views/Appointment/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ibi/Documents/TU/minischeduler/Views/Appointment/Index.cshtml]
+[C:/Users/Ibi/Documents/TU/MiniScheduler/Views/Appointment/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ibi/Documents/TU/minischeduler/Views/Home/Index.cshtml]
+[C:/Users/Ibi/Documents/TU/MiniScheduler/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ibi/Documents/TU/minischeduler/Views/Home/Privacy.cshtml]
+[C:/Users/Ibi/Documents/TU/MiniScheduler/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ibi/Documents/TU/minischeduler/Views/Shared/Error.cshtml]
+[C:/Users/Ibi/Documents/TU/MiniScheduler/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ibi/Documents/TU/minischeduler/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Ibi/Documents/TU/MiniScheduler/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ibi/Documents/TU/minischeduler/Views/_ViewImports.cshtml]
+[C:/Users/Ibi/Documents/TU/MiniScheduler/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ibi/Documents/TU/minischeduler/Views/_ViewStart.cshtml]
+[C:/Users/Ibi/Documents/TU/MiniScheduler/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ibi/Documents/TU/minischeduler/Views/Shared/_Layout.cshtml]
+[C:/Users/Ibi/Documents/TU/MiniScheduler/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-beqiqx7vx9

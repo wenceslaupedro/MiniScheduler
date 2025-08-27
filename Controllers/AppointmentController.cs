@@ -1,10 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 using MiniScheduler.Data;
 using MiniScheduler.Models;
 
 namespace MiniScheduler.Controllers;
 
+[Authorize]
 public class AppointmentController : Controller
 {
 	private readonly AppDbContext _dbContext;
@@ -74,7 +76,7 @@ public class AppointmentController : Controller
 		}
 		if (end.HasValue)
 		{
-			var eUtc = end.Value.Kind == DateTimeKind.Utc ? end.Value : end.Value.ToUniversalTime();
+			var eUtc = end.Value.Kind == DateTimeKind.Unspecified ? end.Value : end.Value.ToUniversalTime();
 			query = query.Where(a => a.DateTime <= eUtc);
 		}
 		var items = await query.Select(a => new

@@ -5,15 +5,50 @@
 <div class="container py-4">
     <div class="row align-items-center g-4">
         <div class="col-md-6">
-            <h1>Welcome to Mini Scheduler</h1>
+            <div class="text-center">
+                <h1>Welcome to Mini Scheduler</h1>
+            </div>
             <br><br>
-            <p class="text-muted" style="text-align: justify;">Need to get a quick reminder? You’re in the right place. Mini Scheduler is a simple and efficient tool designed to help you schedule appointments without the hassle. Just choose your time, enter your details, and you're all set.
+            <p class="text-muted" style="text-align: justify;">Need to get a quick reminder? You're in the right place. Mini Scheduler is a simple and efficient tool designed to help you schedule appointments without the hassle. Just choose your time, enter your details, and you're all set.
 
 No accounts, no clutter—just clean, fast booking.</p>
             <hr />
-            <p>
-                <a class="btn btn-primary" asp-controller="Appointment" asp-action="Index">Go to appointments</a>
-            </p>
+            
+            <!-- Authentication Buttons -->
+            <div class="auth-buttons-container">
+                <div class="d-flex gap-3 mb-3 justify-content-center">
+                    <a class="btn btn-lg auth-btn btn-login" asp-controller="Account" asp-action="Login">
+                        <i class="bi bi-box-arrow-in-right"></i> Login
+                    </a>
+                    <a class="btn btn-lg auth-btn btn-register" asp-controller="Account" asp-action="Register">
+                        <i class="bi bi-person-plus"></i> Register
+                    </a>
+                </div>
+                
+                <div class="text-center">
+                    <p class="text-muted small mb-1">Already have an account? Login to access your appointments.</p>
+                    <p class="text-muted small mb-0">New here? Create an account to get started.</p>
+                </div>
+            </div>
+            
+            <hr />
+            
+            <!-- Conditional Appointments Button -->
+            <div class="text-center">
+                @if (User.Identity?.IsAuthenticated == true)
+                {
+                    <a class="btn btn-secondary btn-lg" asp-controller="Appointment" asp-action="Index">
+                        <i class="bi bi-calendar-check"></i> Go to appointments
+                    </a>
+                }
+                else
+                {
+                    <a class="btn btn-secondary btn-lg" asp-controller="Account" asp-action="Login">
+                        <i class="bi bi-calendar-check"></i> Go to appointments
+                    </a>
+                    <p class="text-muted small mt-2">You need to login first to access appointments</p>
+                }
+            </div>
         </div>
         <div class="col-md-6 text-center text-md-end">
             <img src="~/images/onecalendar.jpg" alt="Calendar" class="img-fluid rounded shadow-sm" style="max-height: 300px; object-fit: cover;" />
