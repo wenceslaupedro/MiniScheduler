@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ibi\\Documents\\TU\\MiniScheduler\\MiniScheduler.csproj": {}
+    "C:\\Users\\Ibi\\Documents\\TU\\minischeduler\\MiniScheduler.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ibi\\Documents\\TU\\MiniScheduler\\MiniScheduler.csproj": {
+    "C:\\Users\\Ibi\\Documents\\TU\\minischeduler\\MiniScheduler.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ibi\\Documents\\TU\\MiniScheduler\\MiniScheduler.csproj",
+        "projectUniqueName": "C:\\Users\\Ibi\\Documents\\TU\\minischeduler\\MiniScheduler.csproj",
         "projectName": "MiniScheduler",
-        "projectPath": "C:\\Users\\Ibi\\Documents\\TU\\MiniScheduler\\MiniScheduler.csproj",
+        "projectPath": "C:\\Users\\Ibi\\Documents\\TU\\minischeduler\\MiniScheduler.csproj",
         "packagesPath": "C:\\Users\\Ibi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ibi\\Documents\\TU\\MiniScheduler\\obj\\",
+        "outputPath": "C:\\Users\\Ibi\\Documents\\TU\\minischeduler\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Ibi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Ibi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -53,6 +59,18 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.8, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[9.4.0, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[9.0.0, )"
             }
           },
           "imports": [
