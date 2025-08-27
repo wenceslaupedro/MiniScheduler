@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniScheduler")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ec97b6cc3b5af366ea88f1130200e466b3a8f2b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92aca49c975df3b1e82961d784c619c1b6261335")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiniScheduler")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniScheduler")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

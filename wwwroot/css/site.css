@@ -153,12 +153,78 @@ body {
 
 /* Page Title Enhancement */
 h1 {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #51148d 0%, #984ce4 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   font-weight: 700;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Centered Page Title */
+.page-title {
+  margin-bottom: 20rem;
+  padding: 1rem 0;
+}
+
+.page-title h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  letter-spacing: 0.5px;
+}
+
+/* Navigation Styling */
+.navbar {
+  padding: 1rem 0;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #667eea !important;
+}
+
+.navbar-nav .nav-link.active {
+  color: #667eea !important;
+  font-weight: 600;
+}
+
+/* Main navigation left alignment */
+.main-nav {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.main-nav .nav-item {
+  margin: 0 0.3rem;
+}
+
+/* Auth navigation right alignment */
+.auth-nav {
+  margin-left: auto;
+}
+
+/* Ensure proper spacing */
+.navbar-collapse {
+  width: 100%;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 576px) {
+  .main-nav {
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  
+  .auth-nav {
+    margin: 0 auto;
+  }
 }
 
 /* Card-like container styling */
@@ -251,6 +317,25 @@ h1 {
   transform: translateY(-5px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
+}
+
+/* Calendar Image Positioning */
+.calendar-image-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 40px;
+  padding-bottom: 150px;
+  }
+
+.calendar-image {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.calendar-image:hover {
+  transform: scale(1.02);
 }
 
 /* Appointments Button Styling */
