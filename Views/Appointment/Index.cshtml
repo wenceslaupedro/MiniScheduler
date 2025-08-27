@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		navLinks: true,
 		nowIndicator: true,
 		dayMaxEventRows: 24,
-		dayHeaderFormat: { day: '2-digit', month: '2-digit', weekday: 'short' },
+		dayHeaderFormat: { weekday: 'long' },
 		events: {
 			url: '@Url.Action("Events", "Appointment")',
 			failure: () => alert('Failed to load events')

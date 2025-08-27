@@ -8,7 +8,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<AppDbContext>(options =>
-	options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+	options.UseMySql(
+		builder.Configuration.GetConnectionString("DefaultConnection"),
+		new MySqlServerVersion(new Version(8, 0, 32)) // Use a versão do seu MySQL
+	));
 
 var app = builder.Build();
 
@@ -30,7 +33,7 @@ using (var scope = app.Services.CreateScope())
 app.UseHttpsRedirection();
 app.UseRouting();
 
-// Force dd/MM/yyyy via en-GB culture
+// Force dd/MM/yyyy date format
 var cultureInfo = new CultureInfo("en-GB");
 var localizationOptions = new RequestLocalizationOptions
 {
@@ -49,5 +52,6 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
 
-
 app.Run();
+
+
